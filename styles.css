@@ -1,0 +1,129 @@
+﻿/*---------------------------------------------------------------------------*/
+.header
+{
+	width: 100%;
+	height: 150px;
+    text-align: center;
+	font-size: 30pt;
+    background: rgb(255, 255, 255) url("images/fon.jpg") no-repeat 0 0;
+}
+/*---------------------------------------------------------------------------*/
+.main_block
+{
+	max-width: 1024px; 
+	width: 100%;
+	min-width:830px;
+	float: none;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*---------------------------------------------------------------------------*/
+.main_text_block , .some_left_block
+{
+    background: rgb(255, 255, 255) url("images/main-container.png") repeat-x;
+    min-height: 510px;
+	margin-bottom:5px;
+}
+/*---------------------------------------------------------------------------*/
+.main_text_block
+{
+	float:right;	
+	width:75%;
+}
+/*---------------------------------------------------------------------------*/
+.info_block
+{
+	float: none;
+	 background-color: rgb(210, 210, 210);
+	 margin: 20px auto 0 auto;
+	 width: 90%;
+	 height: 220px;
+	 font-size: 16pt;
+	 padding-top:4px;
+	 padding-bottom:5px;
+	border-radius: 10px 10px 10px 10px;
+}
+/*---------------------------------------------------------------------------*/
+.some_left_block
+{
+	float:left;
+	width: 24%;
+	font-size: 20pt;
+	vertical-align: middle;
+	text-align: center;
+}
+/*---------------------------------------------------------------------------*/
+.border
+{
+	border: black 1px solid;
+}
+/*---------------------------------------------------------------------------*/
+.main_panel
+{
+	width: 100%;
+	height: 60px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+    background: url("images/css_background-repeat_2.png") repeat-x;
+}
+/*---------------------------------------------------------------------------*/
+li
+{
+	float: left;
+	margin-right:5%;
+}
+/*---------------------------------------------------------------------------*/
+a.test
+{
+	color: blue;
+	font-size: 14pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.test:visited
+{
+	color: blue;
+}
+a.test:hover
+{
+	color: green;
+}
+/*---------------------------------------------------------------------------*/
+.bottom
+{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+    background: rgb(255, 255, 255) url("images/css_background-repeat_2.png") repeat-x;
+    margin-bottom: 30px;
+}
+/*---------------------------------------------------------------------------*/
+body
+{
+    /*выставляем позицию фона*/
+    background: url("images/fon.jpg") no-repeat fixed 50% 50%; /*Запрет повторения*/
+	background-size: cover;				/*Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.*/
+	
+}
+/*---------------------------------------------------------------------------*/
+.input_box
+{
+	float: right;
+	width: 110px;
+	margin-right: 10px;
+}
+/*---------------------------------------------------------------------------*/
+p
+{
+	margin: 8px 5px 0 5px;
+}
+/*---------------------------------------------------------------------------*/
+.bold
+{
+	font-weight: bold;
+}
+/*---------------------------------------------------------------------------*/
+div
+{
+float: left;
+}
