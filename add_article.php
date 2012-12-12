@@ -61,6 +61,10 @@
             if (! mysql_query($add_article_sql)) {
                 $_SESSION['title'] = $title;
             } else {
+                unset($_POST['about']);
+                unset($_POST['title']);
+                unset($_POST['price']);
+                unset($_POST['image']);
                 $_SESSION['added'] = true;
             }
         }
@@ -71,20 +75,20 @@
         <div style='background-color: rgb(255, 255, 255); width: 100%; margin-bottom:10px; padding: 10px;' class='border'>
             <form action='' enctype='multipart/form-data' method='post'>
                 <label for='title'>Заголовок</label>
-                <input type='text' id='title' name='title'><br/>
+                <input type='text' id='title' name='title' value=$_POST[title]><br/>
                 <label for='price'>Цена, грн</label>
-                <input type='text' id='price' name='price'/><br/>
+                <input type='text' id='price' name='price' value=$_POST[price]><br/>
                 <label for='image'>Изображение</label>
                 <input type='file' accept='image/*' name='image' id='image'/><br/>
                 <label for='about'>Описание</label>
-                <textarea rows='15' cols='100' name='about' id='about'></textarea>
+                <textarea rows='15' cols='100' name='about' id='about'>$_POST[about]</textarea>
                 <input type='submit' value='Создать'/>
             </form>
             ";
         {
 //                session_start();
             $text = "";
-            if ($_POST) {
+//            if ($_POST) {
                 if ($_SESSION['added']) {
                     unset($_SESSION['added']);
                     $text = "Товар успешно добавлен";
@@ -113,7 +117,7 @@
 
                 }
                 echo "<p style='width: 100%; margin-top: 10px; margin-bottom:10px; text-align: center; color: red;'>$text</p>";
-            }
+//            }
         }
 echo "
         </div>
